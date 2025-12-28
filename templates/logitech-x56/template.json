@@ -1,0 +1,7 @@
+{
+  "id": "logitech-x56",
+  "name": "Logitech X56 (Stick + Throttle)",
+  "image": "plate.jpeg",
+  "anchors": "anchors.json",
+  "defaultPage": { "size": "A4", "orientation": "landscape", "marginMm": 8 }
+}
