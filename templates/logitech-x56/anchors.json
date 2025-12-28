@@ -2,16 +2,18 @@
   "imageSize": { "width": 1236, "height": 948 },
   
   "anchors": {
-    "stick.JOY_BTN1": { "x": 200, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN2": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN3": { "x": 200, "y": 260, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN4": { "x": 200, "y": 360, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN5": { "x": 200, "y": 460, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN6": { "x": 700, "y": 560, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN7": { "x": 1120, "y": 60, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN8": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN9": { "x": 1120, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN_POV1_U": { "x": 600, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "throttle.JOY_BTN2": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 }
+    "stick.JOY_BTN1": { "x": 450, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 14 },
+
+    "stick.JOY_BTN2": { "x": 905, "y": 145, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN3": { "x": 1119, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 14 },
+
+    "stick.JOY_BTN4": { "x": 200, "y": 360, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN5": { "x": 200, "y": 460, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN6": { "x": 1122, "y": 550, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN7": { "x": 1095, "y": 50, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN8": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN9": { "x": 1095, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN_POV1_U": { "x": 600, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "throttle.JOY_BTN2": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 14 }
   }
 }
