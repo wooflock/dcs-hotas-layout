@@ -8,9 +8,9 @@
     "stick.JOY_BTN4": { "x": 200, "y": 360, "align": "left", "maxWidth": 280, "fontSize": 18 },
     "stick.JOY_BTN5": { "x": 200, "y": 460, "align": "left", "maxWidth": 280, "fontSize": 18 },
     "stick.JOY_BTN6": { "x": 700, "y": 560, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN7": { "x": 1120, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 },
+    "stick.JOY_BTN7": { "x": 1120, "y": 60, "align": "left", "maxWidth": 280, "fontSize": 18 },
     "stick.JOY_BTN8": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 },
-    "stick.JOY_BTN9": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 },
+    "stick.JOY_BTN9": { "x": 1120, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 },
     "stick.JOY_BTN_POV1_U": { "x": 600, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 18 },
     "throttle.JOY_BTN2": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 18 }
   }
