@@ -2,18 +2,91 @@
   "imageSize": { "width": 1236, "height": 948 },
   
   "anchors": {
-    "stick.JOY_BTN1": { "x": 450, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_X": { "x": 100, "y": 300, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_Y": { "x": 100, "y": 350, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_Z": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_RZ": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
 
-    "stick.JOY_BTN2": { "x": 905, "y": 145, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "stick.JOY_BTN3": { "x": 1119, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 14 },
+    "stick.JOY_BTN1": { "x": 450, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 12 },
 
-    "stick.JOY_BTN4": { "x": 200, "y": 360, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "stick.JOY_BTN5": { "x": 200, "y": 460, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "stick.JOY_BTN6": { "x": 1122, "y": 550, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "stick.JOY_BTN7": { "x": 1095, "y": 50, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "stick.JOY_BTN8": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "stick.JOY_BTN9": { "x": 1095, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "stick.JOY_BTN_POV1_U": { "x": 600, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 14 },
-    "throttle.JOY_BTN2": { "x": 200, "y": 160, "align": "left", "maxWidth": 280, "fontSize": 14 }
+    "stick.JOY_BTN2": { "x": 905, "y": 155, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN3": { "x": 1119, "y": 210, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "stick.JOY_BTN4": { "x": 200, "y": 360, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN5": { "x": 1018, "y": 790, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN6": { "x": 1123, "y": 570, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "stick.JOY_BTN7": { "x": 1095, "y": 60, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN10": { "x": 1095, "y": 95, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN8": { "x": 1095, "y": 130, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN9": { "x": 1095, "y": 170, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    
+
+    "stick.JOY_BTN11": { "x": 1126, "y": 296, "align": "left", "maxWidth": 100, "fontSize": 12 },
+    "stick.JOY_BTN14": { "x": 1126, "y": 331, "align": "left", "maxWidth": 100, "fontSize": 12 },
+    "stick.JOY_BTN12": { "x": 1126, "y": 366, "align": "left", "maxWidth": 100, "fontSize": 12 },
+    "stick.JOY_BTN13": { "x": 1126, "y": 401, "align": "left", "maxWidth": 100, "fontSize": 12 },
+
+    "stick.JOY_BTN_POV1_U": { "x": 780, "y": 117, "align": "left", "maxWidth": 130, "fontSize": 12 },
+    "stick.JOY_BTN_POV1_L": { "x": 780, "y": 150, "align": "left", "maxWidth": 100, "fontSize": 12 },
+    "stick.JOY_BTN_POV1_R": { "x": 780, "y": 186, "align": "left", "maxWidth": 130, "fontSize": 12 },
+    "stick.JOY_BTN_POV1_D": { "x": 780, "y": 220, "align": "left", "maxWidth": 100, "fontSize": 12 },
+
+    
+
+
+
+    "throttle.JOY_X": { "x": 100, "y": 300, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_Y": { "x": 100, "y": 350, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_Z": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_RZ": { "x": 100, "y": 450, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_RY": { "x": 100, "y": 500, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_RX": { "x": 100, "y": 550, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    
+    "throttle.JOY_BTN1": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN2": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN3": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN4": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN5": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN6": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN7": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN8": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN9": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN10": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN11": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN12": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN13": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN14": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN15": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN16": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN17": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN18": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN19": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN20": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN21": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN22": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN23": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN24": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN25": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN26": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN27": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN28": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN29": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN30": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN31": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN32": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN33": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN34": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "throttle.JOY_BTN_POV1_UR": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN_POV1_DR": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN_POV1_DL": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN_POV1_UL": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "throttle.JOY_BTN_POV1_R": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN_POV1_U": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN_POV1_D": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "throttle.JOY_BTN_POV1_L": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 }
   }
 }

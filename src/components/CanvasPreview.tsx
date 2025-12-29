@@ -79,13 +79,14 @@ export default function CanvasPreview({ imageUrl, anchors, bindings }: Props) {
           maxWidth,
           Math.max(...lines.map((ln) => ctx.measureText(ln).width)) + 10
         );
-        const boxHeight = lines.length * lineHeight + 10;
+        const boxHeight = lines.length * lineHeight + 10; // 10 is padding
 
         let boxX = a.x;
         if (ctx.textAlign === "center") boxX = a.x - boxWidth / 2;
         if (ctx.textAlign === "right") boxX = a.x - boxWidth;
 
-        const boxY = a.y;
+        
+        const boxY = a.y - boxHeight / 2;
 
         // semi-opaque white box
         ctx.save();
