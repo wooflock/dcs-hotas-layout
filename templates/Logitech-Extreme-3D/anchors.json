@@ -1,0 +1,34 @@
+{
+  "imageSize": { "width": 1250, "height": 703 },
+  
+  "anchors": {
+    "stick.JOY_X": { "x": 100, "y": 300, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_Y": { "x": 100, "y": 350, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_Z": { "x": 100, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "stick.JOY_SLIDER1" : { "x": 1000, "y": 400, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN1": { "x": 450, "y": 200, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "stick.JOY_BTN2": { "x": 105, "y": 155, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    
+    "stick.JOY_BTN3": { "x": 1119, "y": 210, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "stick.JOY_BTN4": { "x": 200, "y": 360, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN5": { "x": 1018, "y": 790, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN6": { "x": 1123, "y": 570, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "stick.JOY_BTN7": { "x": 1095, "y": 60, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN10": { "x": 1095, "y": 95, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN8": { "x": 1095, "y": 130, "align": "left", "maxWidth": 280, "fontSize": 12 },
+    "stick.JOY_BTN9": { "x": 1095, "y": 170, "align": "left", "maxWidth": 280, "fontSize": 12 },
+
+    "stick.JOY_BTN11": { "x": 1126, "y": 296, "align": "left", "maxWidth": 100, "fontSize": 12 },
+    
+    "stick.JOY_BTN12": { "x": 1126, "y": 366, "align": "left", "maxWidth": 100, "fontSize": 12 },
+    
+    "stick.JOY_BTN_POV1_U": { "x": 980, "y": 130, "align": "left", "maxWidth": 250, "fontSize": 12 },
+    "stick.JOY_BTN_POV1_L": { "x": 980, "y": 170, "align": "left", "maxWidth": 250, "fontSize": 12 },
+    "stick.JOY_BTN_POV1_R": { "x": 980, "y": 220, "align": "left", "maxWidth": 250, "fontSize": 12 },
+    "stick.JOY_BTN_POV1_D": { "x": 980, "y": 265, "align": "left", "maxWidth": 250, "fontSize": 12 }
+  }
+}

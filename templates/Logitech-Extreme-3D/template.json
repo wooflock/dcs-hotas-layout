@@ -1,0 +1,7 @@
+{
+  "id": "logitech-Extreme-3D",
+  "name": "Logitech Extreme 3D",
+  "image": "plate.jpg",
+  "anchors": "anchors.json",
+  "defaultPage": { "size": "A4", "orientation": "landscape", "marginMm": 8 }
+}
