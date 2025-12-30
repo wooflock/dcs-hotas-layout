@@ -1,8 +1,67 @@
-import { app, BrowserWindow, dialog, ipcMain, protocol } from "electron";
+import { app, BrowserWindow, dialog, ipcMain, protocol, Menu } from "electron";
 import * as path from "node:path";
 import * as fs from "node:fs";
 
 const isDev = !app.isPackaged;
+
+function buildAppMenu(win: BrowserWindow){
+
+  const template: Electron.MenuItemConstructorOptions[] = [
+    {
+      label: "File",
+      submenu: [
+        {
+          label: "Import Stick .diff.lua…",
+          accelerator: "Ctrl+O",
+          click: () => win.webContents.send("menu:import", { device: "stick" })
+        },
+        {
+          label: "Import Throttle .diff.lua…",
+          accelerator: "Ctrl+Shift+O",
+          click: () => win.webContents.send("menu:import", { device: "throttle" })
+        },
+        { type: "separator" },
+        {
+          label: "Show Bindings",
+          type: "checkbox",
+          checked: false,
+          click: (item) => {
+            win.webContents.send("menu:toggleBindings", { visible: item.checked});
+          }
+        },
+        { type: "separator" },
+        {
+          label: "Export to PDF…",
+          accelerator: "Ctrl+P",
+          click: () => win.webContents.send("menu:exportPdf")
+        },
+        { type: "separator" },
+        { role: "quit" }
+      ]
+    },
+    {
+      label: "Help",
+      submenu: [
+        {
+          label: "About",
+          click: () => win.webContents.send("menu:about")
+        }
+      ]
+    }
+  ];
+
+  // macOS convention: first menu is app name
+  if (process.platform === "darwin") {
+    template.unshift({
+      label: app.name,
+      submenu: [{ role: "about" }, { type: "separator" }, { role: "quit" }]
+    });
+  }
+
+  const menu = Menu.buildFromTemplate(template);
+  Menu.setApplicationMenu(menu);
+}
+
 
 function getBundledTemplatesDir(): string {
   // In dev, templates folder sits at project root.
@@ -63,6 +122,8 @@ async function createWindow() {
       nodeIntegration: false
     }
   });
+
+  buildAppMenu(win);
 
   if (isDev) {
     await win.loadURL("http://127.0.0.1:5173");

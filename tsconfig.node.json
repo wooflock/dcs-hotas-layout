@@ -5,7 +5,8 @@
     "moduleResolution": "Bundler",
     "strict": true,
     "skipLibCheck": true,
-    "types": ["node"]
+    "types": ["node"],
+    "noEmit": true
   },
   "include": ["vite.config.ts"]
 }

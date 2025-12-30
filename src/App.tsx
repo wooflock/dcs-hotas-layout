@@ -21,7 +21,7 @@ export default function App() {
   const [pageSize, setPageSize] = useState<PageSize>("A4");
   const [orientation, setOrientation] = useState<Orientation>("landscape");
 
-  
+  const [showBindingsPanel, setShowBindingsPanel] = useState(false);
 
 
   useEffect(() => {
@@ -45,6 +45,27 @@ export default function App() {
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTemplateId]);
+
+  useEffect(() => {
+  window.hotasApi.onMenuImport(({ device }) => {
+    importForDevice(device);
+  });
+
+  window.hotasApi.onMenuExportPdf(() => {
+    onExportPdf();
+  });
+
+  window.hotasApi.onMenuAbout(() => {
+    alert("HOTAS Layout Exporter\nBy Martin Quensel\nBeta version.\nTakes DCS files with the input config and shows it.");
+  });
+
+  window.hotasApi.onMenuToggleBindings(({ visible }) => {
+    setShowBindingsPanel(visible);
+  });
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
+
 
   const canExport = useMemo(() => {
     return Boolean(selectedTemplateId && imageUrl && anchors && bindings.length > 0);
@@ -82,45 +103,6 @@ export default function App() {
     return out;
   }
 
-
-  async function onImportLua() {
-    try {
-      console.log("Import clicked. hotasApi?", window.hotasApi);
-
-      const files = await window.hotasApi.openLuaDiffFiles();
-      console.log("openLuaDiffFiles returned:", files);
-
-      if (!files || files.length === 0) {
-        alert("No files selected (or dialog canceled).");
-        return;
-      }
-
-      const all: Binding[] = [];
-      for (const f of files) {
-        const parsed = parseDcsDiffLua(f.content);
-        all.push(...parsed.bindings);
-      }
-
-      console.log("Parsed bindings:", all.length);
-
-      // Dedupe
-      const seen = new Set<string>();
-      const deduped: Binding[] = [];
-      for (const b of all) {
-        const k = `${b.key}||${b.action}`;
-        if (seen.has(k)) continue;
-          seen.add(k);
-        deduped.push(b);
-      }
-
-      setBindings(deduped);
-      alert(`Imported ${files.length} lua file(s), parsed ${deduped.length} bindings.`);
-    } catch (err) {
-      console.error("Import failed:", err);
-      alert(`Import failed: ${String(err)}`);
-    }
-  }
-
   async function onExportPdf() {
     const result = await window.hotasApi.exportPdf({
       pageSize,
@@ -156,7 +138,12 @@ export default function App() {
         />
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: 16, marginTop: 16 }}>
+      <div style={{ 
+        display: "grid", 
+        gridTemplateColumns: showBindingsPanel ? "1.6fr 1fr" : "1fr", 
+        gap: 16, 
+        marginTop: 16 
+      }}>
         <div>
           {!imageUrl || !anchors ? (
             <div style={{ padding: 24, border: "1px dashed #ccc", borderRadius: 8 }}>
@@ -167,12 +154,14 @@ export default function App() {
           )}
         </div>
 
+        {showBindingsPanel && (
         <div>
           <BindingList anchors={anchors} bindings={bindings} />
           <div style={{ marginTop: 12, color: "#666", fontSize: 13 }}>
-            Tip: If actions appear under “Unmapped”, add those keys to the template’s anchors.json.
+            If actions appear under “Unmapped”, add those keys to the template’s anchors.json.
           </div>
         </div>
+        )}
       </div>
     </div>
   );
